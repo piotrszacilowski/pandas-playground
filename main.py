@@ -1,10 +1,22 @@
-import random
-import pandas
+import pandas as pd
 
+spreadsheet = pd.read_csv("data/photovoltaics-2021.xls")
 
-def main():
-    print(f'Hi {random.randint(1,10)}')
+df = pd.DataFrame(
+    {
+        "Name": [
+            "Braund, Mr. Owen Harris",
+            "Allen, Mr. William Henry",
+            "Bonnell, Miss. Elizabeth",
+        ],
+        "Age": [22, 35, 58],
+        "Sex": ["male", "male", "female"],
+    }
+)
 
+print(df)
+print('-' * 9)
+print(df['Age'].max())
+print(df['Age'][0])
+print(type(df['Age']))
 
-if __name__ == '__main__':
-    main()
