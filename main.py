@@ -1,6 +1,9 @@
 import pandas as pd
 
+from electricity_price import fetch_data
+
 spreadsheet = pd.read_csv("data/photovoltaics-2021.xls")
+price = fetch_data()
 
 df = pd.DataFrame(
     {

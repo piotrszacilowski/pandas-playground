@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+          "type": "python",
+          "name": "run main",
+          "arguments": ["electricity_price.py"],
+          "pythonInterpreterPath": "$PROJECT_DIR$/venv/bin/python",
+        },
+    ]
+}
