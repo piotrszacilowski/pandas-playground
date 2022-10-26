@@ -8,7 +8,7 @@ from exceptions import ApiIsUnreachable, DataFetchingFailed
 URL: str = 'https://www.globalpetrolprices.com/Poland/electricity_prices/'
 
 
-def fetch_data() -> t.Dict:
+def get_electricity_price() -> t.Dict:
     resp = r.get(url=URL)
 
     if resp.status_code != 200:
